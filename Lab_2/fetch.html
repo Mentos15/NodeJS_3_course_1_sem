@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    fetch('http://localhost:5000/api/name')
+    .then((response) => {
+    return response.text();
+    })
+    .then((data) => {
+    document.body.innerHTML += data;
+    });
+    // var response = await fetch('http://localhost:5000/api/name');
+    // var result = await response.text;
+    // document.body.innerHTML += result
+</script>
+<body>
+    
+</body>
+</html>
